@@ -1,12 +1,13 @@
 # Fonte Ajustavel
-## Fonte Tensão ajustável entre 3V a 12V com capacidade de 100mA feita para a Disciplina: SSC0180 - Eletrônica para Computação
-<br></br>
+## Fonte Tensão ajustável feita para a Disciplina: SSC0180 - Eletrônica para Computação
 ## Gabriel Barbosa 12543415 | Felipe Momma 12543700 | Murillo Martins 12701599
 <br></br>
+<h2>Descrição do Projeto</h2>
+ Construção de uma fonte retificadora capaz de transformar corrente alternada de tensão de 127 volts em uma corrente contínua, tensão ajustável entre 3 e 12 volts com capacidade de 100mA.
 <h2>Componentes : </h2>
 <h3>Funções</h3>
 <ul>
-  <li>Transformador : </li>
+  <li>Transformador : Opera em corrente alternada e irá abaixar a tensão. Nesse projeto o transformador irá receber uma tensão máxima de 180V e terá como saida 18V</li>
   <li>Diodo : </li>
   <li>Capacitor : </li>
   <li>Diodo Zener : </li>
@@ -49,8 +50,13 @@
   </tr>
     <tr>
     <td>Resistor 240Ω</td>
-    <td>4</td>
-    <td><a href= https://www.baudaeletronica.com.br/resistor-240r-5-1-4w.html?gclid=EAIaIQobChMIp5nCpff-8QIVUwiRCh3iTgPXEAQYASABEgLgEvD_BwE>R$ 0,06 x 4 = R$ 0,24</a></td>
+    <td>3</td>
+    <td><a href= https://www.baudaeletronica.com.br/resistor-240r-5-1-4w.html?gclid=EAIaIQobChMIp5nCpff-8QIVUwiRCh3iTgPXEAQYASABEgLgEvD_BwE>R$ 0,06 x 3 = R$ 0,18</a></td>
+  </tr>
+      <tr>
+    <td>Resistor 100Ω</td>
+    <td>2</td>
+    <td><a href= https://www.baudaeletronica.com.br/resistor-100r-5-1-4w.html?gclid=EAIaIQobChMI7dTq2YT_8QIVHx-tBh0sMwn5EAQYAiABEgKN0PD_BwE>R$ 0,08 x 2 = R$ 0,16</a></td>
   </tr>
       <tr>
     <td>Transistor</td>
@@ -60,13 +66,18 @@
         <tr>
     <td ><b>Total</b></td>
     <td></td>
-    <td><b>R$ 40,05</b></td>
+    <td><b>R$ 40,15</b></td>
   </tr>
 </table>
+<h2>Cálculos do Projeto</h2>
+calculos aqui
 <h2>Circuito no Falstad</h2>
 <h3>Imagem</h3>
-<img style="border-radius: 25px;" src = https://files.catbox.moe/inz4ag.png></img>
+<img src = https://files.catbox.moe/m1duee.png></img>
 <h3>Link</h3>
-  <li><a href = https://tinyurl.com/ygsf95dc>Link do Falstad</a></li>
-  <li><a href= https://files.catbox.moe/eximnx.txt>Arquivo do Projeto</a></li>
-<h2>PCM no EAGLEe</h2>
+  <li><a href = https://tinyurl.com/yz3e4p9p>Link do Falstad</a></li>
+  <li><a href= https://files.catbox.moe/bmcvo9.txt>Arquivo do Projeto</a></li>
+<h2>PCB no EAGLE</h2>
+<img src = colocar img></img>
+<h2>Vídeo da apresentação</h2>
+<li><a href = colocar link>Link do Vídeo</a></li>
