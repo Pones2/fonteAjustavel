@@ -7,13 +7,17 @@
 <h2>Componentes : </h2>
 <h3>Funções</h3>
 <ul>
-  <li>Transformador : Opera em corrente alternada e irá abaixar a tensão. Nesse projeto o transformador irá receber uma tensão máxima de 180V e terá como saida 18V</li>
-  <li>Diodo : </li>
-  <li>Capacitor : </li>
-  <li>Diodo Zener : </li>
-  <li>Potenciômetro : </li>
-  <li>Resistor : </li>
-  <li>Transistor : </li>
+  <li><b>Transformador :</b> O transformador funciona através da diferença no número de enrolamentos em duas bobinas e, baseando-se no fato de que a potência é preservada na entrada e na saída, consegue diminuir a tensão na razão das voltas das bobinas.</li>
+  <li><b>Ponte de Diodos :</b> A ponte de diodos tem a função de não deixar a corrente fluir no sentido contrário ao desejado, redirecionando-a quando for necessário.
+</li>
+  <li><b>Capacitor :</b> O capacitor carrega quando a corrente flui no sentido de carga e quando a tensão não é suficiente para alimentar o resto do circuito, o capacitor descarrega, fornecendo a corrente para a carga. A ponte de diodos impede que o capacitor descarregue de volta na fonte de alimentação.
+</li>
+ <li><b>Resistor do Zener :</b> Utiliza-se um resistor em série com o diodo zener para limitar a corrente que passa por este e evitar que queime.</li>
+  <li><b>Diodo Zener :</b> É um tipo especial de diodo que, quando deixa passar a corrente, limita o circuito a uma tensão específica. No caso do nosso projeto utilizamos um zener que limita em 13 V, um pouco abaixo do mínimo fornecido pelo capacitor. Isso possibilita entregar uma corrente contínua com oscilações muito baixas.
+</li>
+  <li><b>Potenciômetro :</b> é um componente eletrônico que possui resistência elétrica ajustável. Geralmente, é um resistor de três terminais onde a conexão central é deslizante e manipulável. Se todos os três terminais são usados, ele atua como um divisor de tensão.</li>
+  <li><b>Transistor :</b> O transistor precisa de uma diferença de potencial mínima para ligar, então quando a tensão na carga se eleva ao ponto da diferença de potencial ficar menor que a diferença mínima exigida pelo transistor, ele desliga. Dessa forma, garante-se que a tensão não passará de um valor determinado que, no caso do nosso projeto, é um pouco acima de 12 V.</li>
+ <li><b>Carga :</b> Por fim, temos a carga que vai receber os 100 mA a 12V. Para os testes dessa fonte, utilizamos uma resistência de 120 Ohms. A carga está ligada em paralelo com o resistor do zener e tem a sua tensão limitada pelo diodo e pelo transistor e regulada de 3 a 12 V por um potenciômetro.</li>
 </ul>  
 
 <h3>Preços</h3>
@@ -70,7 +74,39 @@
   </tr>
 </table>
 <h2>Cálculos do Projeto</h2>
-calculos aqui
+<ul>
+ <li><b>Transformador :</b> A tensão na entrada do transformador é a seguinte:
+  <img src = https://files.catbox.moe/eya2db.png></img>
+
+A razão do transformador escolhida para esse projeto foi de 0,1:
+
+Pico na saída: 179,6 * 0,1 = 17,96 V;
+
+Pico obtido no Falstad: 17, 38 V;
+
+Escolhemos um valor de tensão comercial que entrega 18 V na saída.
+</li>
+  <li><b>Ponte de Diodos : </b>Modelo dos diodos: 1N4004
+ 
+Há sempre dois diodos ligados e cada diodo consome 0,7V, logo, há uma queda de tensão de 2 * 0,7 = 1,4 V.
+ 
+Tensão depois da ponte de diodos = 18 - 1,4 = 16,6 V.
+ 
+Tensão depois da ponte de diodos obtida no Falstad: 16,475.
+ 
+</li>
+  <li><b>Capacitor : </b>Cálculo da capacitância considerando um ripple de 10%:
+<img src = https://files.catbox.moe/zp9wyj.png></img>
+
+OBS: Utilizando o capacitor de 560, a simulação apresentou uma tensão de pico depois do capacitor de 16,397 V e tensão mínima de 15,62 V, o que representa um ripple de aproximadamente 5%.
+
+</li>
+  <li><b>Resistor do Zener : </b>Calculamos esse resistor da seguinte maneira:
+<img src = https://files.catbox.moe/c37h4k.png></img></li>
+  <li><b>Carga : </b>Considerando que o diodo zener corta em 13 V e que o transistor precisa de 0,7 V para funcionar, a tensão que chega na carga é de 13 - 0,7 V = 12,3 V. Portanto, a corrente será:
+
+<img src = https://files.catbox.moe/woutte.png></img></li>
+ </ul>
 <h2>Circuito no Falstad</h2>
 <h3>Imagem</h3>
 <img src = https://files.catbox.moe/m1duee.png></img>
