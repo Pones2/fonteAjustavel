@@ -113,8 +113,10 @@ OBS: Utilizando o capacitor de 560, a simulação apresentou uma tensão de pico
 <h3>Link</h3>
   <li><a href = https://tinyurl.com/yz3e4p9p>Link do Falstad</a></li>
   <li><a href= https://files.catbox.moe/bmcvo9.txt>Arquivo do Projeto</a></li>
-<h2>PCB no EAGLE</h2>
+<h2>EAGLE</h2>
+<h3>Esquemático do PCB no Eagle</h3>
 <img src = https://files.catbox.moe/p8rpio.png></img>
+<h3>PCB no Eagle</h3>
 <img src = https://files.catbox.moe/dpqbjg.png></img>
 <h2>Vídeo da apresentação</h2>
 <li><a href = colocar link>Link do Vídeo</a></li>
