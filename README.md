@@ -1,5 +1,5 @@
 # Fonte Ajustavel
-## Fonte Tensão ajustável feita para a Disciplina: SSC0180 - Eletrônica para Computação
+## Fonte de Tensão ajustável feita para a Disciplina: SSC0180 - Eletrônica para Computação
 ## Gabriel Barbosa 12543415 | Felipe Momma 12543700 | Murillo Martins 12701599
 <br></br>
 <h2>Descrição do Projeto</h2>
@@ -119,4 +119,5 @@ OBS: Utilizando o capacitor de 560, a simulação apresentou uma tensão de pico
 <h3>PCB no Eagle</h3>
 <img src = https://files.catbox.moe/dpqbjg.png></img>
 <h2>Vídeo da apresentação</h2>
-<li><a href = colocar link>Link do Vídeo</a></li>
+<a href= https://www.youtube.com/watch?v=-rWx9b_t3mE><img src = https://img.youtube.com/vi/-rWx9b_t3mE/0.jpg></img></a>
+<li><a href = https://drive.google.com/file/d/19ld8nZFTsbVohaF3DAp1iNqHmO0OR5Vy/view>Link do Drive do vídeo</a></li>
